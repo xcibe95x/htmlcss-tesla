@@ -1,4 +1,5 @@
-/* General */
+/* General */ 
+/* TODO: Clean the CSS and reduce lines and redundancy */
 @font-face{font-display:swap; font-family:Gotham SSm; font-style:normal; font-weight:400; src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2)}
 
 * {
