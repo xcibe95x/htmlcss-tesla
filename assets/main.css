@@ -37,7 +37,7 @@ a:active {
 }
 
 /* Navbar */
-nav {
+nav, footer {
     position: relative;
     margin: 20px;
     text-align: center;
@@ -55,7 +55,7 @@ nav .right-nav {
     text-align: right;
 }
 
-nav li, nav  a {
+.center-nav, nav li, nav  a, footer li {
     display: inline-block;
     list-style: none;
 }
