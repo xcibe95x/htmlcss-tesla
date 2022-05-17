@@ -8,6 +8,11 @@
     font-family: Gotham SSm, sans-serif;
 }
 
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
 header {
     position: fixed;
     width: calc(100vw - 1vw);
@@ -31,6 +36,8 @@ section img {
     object-fit: cover;
     margin-bottom: -4px;
 }
+
+
 
 a,
 a:active {
@@ -92,8 +99,7 @@ nav ul li a:hover {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 36px;
-    font-weight: 600;
+    text-align: center;
 }
 
 .headline, .navbar-brand, nav .right-nav, nav .center-nav, .b-container {
@@ -109,6 +115,8 @@ nav ul li a:hover {
 .button {
     background: #3F4045;
     color: white;
+    font-size: 12px;
+    font-weight: 600;
     text-transform: uppercase;
     padding: 10px 36px;
     border: none;
@@ -120,4 +128,5 @@ nav ul li a:hover {
 .button.white {
     color: #3F4045;
     background: white;
+    font-weight: 500;
 }
