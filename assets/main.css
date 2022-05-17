@@ -3,10 +3,13 @@
     box-sizing: border-box;
     margin: 0; padding: 0;
     scroll-behavior: smooth;
+    font-family: Gotham SSm, sans-serif;
 }
 
 header {
     position: fixed;
+    width: calc(100vw - 1vw);
+    z-index: 1;
 }
 
 main {
@@ -16,6 +19,7 @@ main {
 }
 
 main > section {
+    position: relative;
     scroll-snap-align: start;
 }
 
@@ -34,44 +38,82 @@ a:active {
 
 /* Navbar */
 nav {
-    width: 100vw;
     position: relative;
     margin: 20px;
     text-align: center;
 }
 
 nav .center-nav {
-    position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 nav .right-nav {
-    position: absolute;
     top: 0;
     right: 0;
     text-align: right;
 }
 
-nav ul, nav li, nav  a {
+nav li, nav  a {
     display: inline-block;
+    list-style: none;
 }
 
-nav li {
-    list-style: none;
+nav ul li a {
+    padding: 8px 12px;
+    transition: opacity 0.3s ease-in;
+}
+
+nav ul li a:hover {
+    align-items: center;
+    border-radius: 12px;
+    padding: 4px 1px;
+    background: #3f4045;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 8px 12px;
+    opacity: 0.6;
+
 }
 
 .navbar-brand {
     inline-size: calc(24px * 5);
     vertical-align: middle;
-    position: absolute;
     top: 0;
     left: 0;
 }
 
+.headline {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
 
-/* position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%); */
+.headline, .navbar-brand, nav .right-nav, nav .center-nav, .b-container {
+    position: absolute;
+}
+
+.b-container {
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button {
+    background: #3F4045;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 36px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    margin: 26px;
+}
+
+.button.white {
+    color: #3F4045;
+    background: white;
+}
