@@ -1,4 +1,6 @@
 /* General */
+@font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:400;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2)}
+
 * {
     box-sizing: border-box;
     margin: 0; padding: 0;
@@ -63,17 +65,18 @@ nav .right-nav {
 nav ul li a {
     padding: 8px 12px;
     transition: opacity 0.3s ease-in;
+    color: #171a20;
+    font-weight: 500;
 }
 
 nav ul li a:hover {
     align-items: center;
     border-radius: 12px;
-    padding: 4px 1px;
     background: #3f4045;
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
-    padding: 8px 12px;
+    padding: 6px 8px;
     opacity: 0.6;
 
 }
@@ -89,7 +92,8 @@ nav ul li a:hover {
     top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: 600;
 }
 
 .headline, .navbar-brand, nav .right-nav, nav .center-nav, .b-container {
@@ -108,7 +112,7 @@ nav ul li a:hover {
     text-transform: uppercase;
     padding: 10px 36px;
     border: none;
-    border-radius: 16px;
+    border-radius: 20px;
     cursor: pointer;
     margin: 26px;
 }
