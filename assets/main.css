@@ -6,16 +6,18 @@
     margin: 0; padding: 0;
     scroll-behavior: smooth;
     font-family: Gotham SSm, sans-serif;
+    text-align: center;
 }
-a,
-a:active {
+
+a, p, a:active {
     text-decoration: none;
-    color: #171a20;
+    color: #171a20bf;
 }
 
 h1 {
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 header {
@@ -42,6 +44,16 @@ section img {
     margin-bottom: -4px;
 }
 
+section p a {
+    border-bottom: 0.1em solid black;
+    font-size: 14px;
+    border-top: 1px solid transparent;
+}
+
+section p:hover {
+    border-bottom: 2px solid black;
+}
+
 footer, footer a {
     top: 92%;
     color: #5e5c62;
@@ -53,7 +65,6 @@ footer, footer a {
 nav, footer {
     position: relative;
     margin: 15px;
-    text-align: center;
 }
 
 nav .center-nav {
@@ -98,9 +109,8 @@ nav ul li a:hover {
 }
 
 .headline {
-    top: 20%;
+    top: 15%;
     transform: translate(-50%, -50%);
-    text-align: center;
     font-weight: 500;
 }
 
@@ -114,7 +124,8 @@ nav ul li a:hover {
 }
 
 .b-container {
-    top: 85%;
+    width: 100%;
+    top: 84%;
 }
 
 .button {
