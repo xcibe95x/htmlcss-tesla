@@ -1,5 +1,5 @@
 /* General */
-@font-face{font-display:swap;font-family:Gotham SSm;font-style:normal;font-weight:400;src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Book_Web.woff2)}
+@font-face{font-display:swap; font-family:Gotham SSm; font-style:normal; font-weight:400; src:url(https://cdn-design.tesla.com/tds-fonts/3.x/woff2/GothamSSm-Medium_Web.woff2)}
 
 * {
     box-sizing: border-box;
@@ -38,7 +38,6 @@ section img {
 }
 
 
-
 a,
 a:active {
     text-decoration: none;
@@ -48,7 +47,7 @@ a:active {
 /* Navbar */
 nav, footer {
     position: relative;
-    margin: 20px;
+    margin: 15px;
     text-align: center;
 }
 
@@ -70,29 +69,27 @@ nav .right-nav {
 }
 
 nav ul li a {
-    padding: 8px 12px;
-    transition: opacity 0.3s ease-in;
-    color: #171a20;
-    font-weight: 500;
+    padding: 8px 16px;
+    background: transparent;
+    color: rgba(23, 26, 32, 0.788);
+    font-size: 14px;
+    opacity: 0.9;
 }
 
 nav ul li a:hover {
     align-items: center;
-    border-radius: 12px;
-    background: #3f4045;
+    background: rgba(23, 26, 32, 0.1);;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    padding: 6px 8px;
-    opacity: 0.6;
-
+    padding: 8px 16px;
+    transition: background 0.3s ease-in;
 }
 
 .navbar-brand {
     inline-size: calc(24px * 5);
-    vertical-align: middle;
-    top: 0;
-    left: 0;
+    top: 10px;
+    left: 24px;
 }
 
 .headline {
@@ -100,6 +97,7 @@ nav ul li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    font-weight: 500;
 }
 
 .headline, .navbar-brand, nav .right-nav, nav .center-nav, .b-container {
@@ -116,7 +114,6 @@ nav ul li a:hover {
     background: #3F4045;
     color: white;
     font-size: 12px;
-    font-weight: 600;
     text-transform: uppercase;
     padding: 10px 36px;
     border: none;
@@ -128,5 +125,4 @@ nav ul li a:hover {
 .button.white {
     color: #3F4045;
     background: white;
-    font-weight: 500;
 }
