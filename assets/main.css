@@ -7,6 +7,11 @@
     scroll-behavior: smooth;
     font-family: Gotham SSm, sans-serif;
 }
+a,
+a:active {
+    text-decoration: none;
+    color: #171a20;
+}
 
 h1 {
     font-size: 36px;
@@ -37,11 +42,11 @@ section img {
     margin-bottom: -4px;
 }
 
-
-a,
-a:active {
-    text-decoration: none;
-    color: #000;
+footer, footer a {
+    top: 92%;
+    color: #5e5c62;
+    font-size: 12px;
+    padding: 8px;
 }
 
 /* Navbar */
@@ -94,24 +99,26 @@ nav ul li a:hover {
 
 .headline {
     top: 20%;
-    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     font-weight: 500;
 }
 
-.headline, .navbar-brand, nav .right-nav, nav .center-nav, .b-container {
+.headline, .navbar-brand, nav .right-nav, nav .center-nav, .b-container, footer {
     position: absolute;
 }
 
-.b-container {
-    top: 85%;
+ footer, .headline, .b-container {
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.b-container {
+    top: 85%;
+}
+
 .button {
-    background: #3F4045;
+    background: #171A20BF;
     color: white;
     font-size: 12px;
     text-transform: uppercase;
@@ -123,6 +130,6 @@ nav ul li a:hover {
 }
 
 .button.white {
-    color: #3F4045;
+    color: #171A20BF;
     background: white;
 }
